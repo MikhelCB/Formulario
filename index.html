@@ -15,12 +15,26 @@
     <title>Crie seu Evento</title>
   </head>
   <body class="container">
-    <header class="cabeçalho-inicial">
-      <h1 class="titulo-inicial">Crie e compartilhe seu evento.</h1>
-      <p class="subtitulo-primeiro-passo">
-        O primeiro passo, é preencher esse formulário de inscrição.
-      </p>
-    </header>
-    <form class="form-inputs">Aqui vem os inputs</form>
+    <div class="page">
+      <header class="cabeçalho-inicial">
+        <h1 class="titulo-inicial">Crie e compartilhe seu evento.</h1>
+        <p class="subtitulo-primeiro-passo">
+          O primeiro passo, é preencher esse formulário de inscrição.
+        </p>
+      </header>
+      <form class="form-inputs">
+        <fieldset class="agrupamento">
+          <legend class="legenda">Informações do Evento</legend>
+
+          <div class="input-wrapper">
+            <label for="event-title"
+              >Título do Evento
+              <span class="span-caracter">(Mínimo 8 carácteres)</span></label
+            >
+            <input type="text" id="event-title" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
