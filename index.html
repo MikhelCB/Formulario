@@ -55,6 +55,61 @@
               <label for="event-info">Informações Extras </label>
               <textarea class="event-info"></textarea>
             </div>
+
+            <div class="input-wrapper">
+              <label for="event-category">Categoria</label>
+              <select class="event-category">
+                <option value="live">Ao Vivo</option>
+                <option value="podcast">Podcast</option>
+                <option value="mentorship">Mentorship</option>
+                <option value="others">Outros</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="agrupamento">
+          <div class="fieldset-wrapper">
+            <legend class="legenda">Privacidade</legend>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-email"
+              >E-mail do Administrador
+              <span class="span-email">(Digite um e-mail válido)</span></label
+            >
+            <input type="email" id="event-title" />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-title"
+              >Senha de acesso para os participantes
+              <span class="span-password">(Mínimo 8 carácteres)</span></label
+            >
+            <input type="password" id="event-title" />
+          </div>
+        </fieldset>
+
+        <fieldset class="agrupamento">
+          <div class="fieldset-wrapper">
+            <legend class="legenda">Dia e Hora</legend>
+          </div>
+
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-data">Data</label>
+              <input type="date" id="event-title" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-begin">Das </label>
+              <input type="time" id="event-title" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-begin">Até </label>
+              <input type="time" id="event-title" />
+            </div>
           </div>
         </fieldset>
       </form>
