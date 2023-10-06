@@ -85,7 +85,8 @@
   flex-direction: column;
 }
 
-.event-title {
+.event-title,
+.checkbox-wrapper label {
   font-size: 14px;
   line-height: 24px;
 
@@ -151,4 +152,35 @@
 
 .col-3 > div:nth-child(1) {
   width: 100%;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  margin: 0;
+  gap: 16px;
+}
+
+.checkbox-wrapper input {
+  display: none;
+}
+
+.checkbox-wrapper label::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background: red;
 }
